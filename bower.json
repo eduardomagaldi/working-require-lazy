@@ -1,0 +1,24 @@
+{
+  "name": "from2",
+  "version": "0.0.0",
+  "authors": [
+    "eduardomagaldi <eduardomagaldi@hotmail.com>"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "backbone": "~1.1.0",
+    "jquery": "~2.0.3",
+    "lodash": "~2.3.0",
+    "require-lazy": "~0.3.0",
+    "requirejs": "~2.1.9",
+    "almond": "~0.2.7",
+    "rgrove-lazyload": "*"
+  }
+}

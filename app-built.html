@@ -1,0 +1,24 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8" />
+	<title>Application</title>
+	<script src="/bower_components/almond/almond.js"></script>
+	<script>
+		var baseUrl;
+		(function() {
+			var originalConfig = require.config;
+			require.config = function(cfg) {
+				if( cfg && cfg.baseUrl ) baseUrl = '/built' + cfg.baseUrl;
+				originalConfig.call(require, cfg);
+			};
+		})();
+	</script>
+	<script src="/js/config.js"></script>
+	<script src="/bower_components/rgrove-lazyload/lazyload.js"></script>
+	<script src="/built/js/main-built.js"></script>
+</head>
+<body>
+	<a id="main">main</a>
+</body>
+</html>
